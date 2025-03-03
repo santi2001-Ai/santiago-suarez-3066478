@@ -1,0 +1,22 @@
+// Definir lista de días
+let lista = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+
+// 1️ Mostrar el elemento en la posición 4 (índice 4)
+console.log(lista[4]); // Salida: "Viernes"
+
+// 2️ Mostrar la lista completa
+console.log(lista); // Salida: ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]
+
+// 3️ Mostrar los primeros tres elementos (equivalente a [0:3] en Python)
+console.log(lista.slice(0, 3)); // Salida: ["Lunes", "Martes", "Miércoles"]
+
+// 4️ Lista con diferentes tipos de datos, incluyendo una sublista
+let listaCompleta = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", 1, 2, 3, ["Santiago", 0.2, 2.25, true]];
+
+// Mostrar elementos desde 0 hasta 3 y los primeros tres elementos de la sublista interna
+console.log(listaCompleta.slice(0, 4), listaCompleta[9].slice(0, 3)); 
+
+/* 
+Salida esperada:
+["Lunes", "Martes", "Miércoles", "Jueves"] ["Santiago", 0.2, 2.25]
+*/
